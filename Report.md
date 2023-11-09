@@ -12,7 +12,7 @@ Store         | Worst Case | Description
 CustomerStore | O(n)       | I used a `Hash Map` to store customers. <br>Where `n` is total customers in the store
 
 ### Time Complexity
-Method                           | Average Case     | Description
+Method                           | Worst Case       | Description
 -------------------------------- | ---------------- | -----------
 addCustomer(Customer c)          | O(1)             | Hashmap add is constant time
 addCustomer(Customer[] c)        | O(n)             | Calls first `addCustomer` n times <br>`n` is the length of the input array
@@ -40,7 +40,7 @@ Store          | Worst Case | Description
 FavouriteStore | O(n)       | I have used an `array list` to store favourites <br>Where `n` is the number of favourites in the store
 
 ### Time Complexity
-Method                                                          | Average Case     | Description
+Method                                                          | Worst Case       | Description
 --------------------------------------------------------------- | ---------------- | -----------
 addFavourite(Favourite f)                                       | O(n)             | For loops <br>`n` is the number of favourites in the store
 addFavourite(Favourite[] f)                                     | O(m*n)           | First `addFavourite` is called m times <br>`m` is the length of the given array
@@ -69,7 +69,7 @@ Store           | Worst Case | Description
 RestaurantStore | O(n)       | I have used a `hash map` to store restaurants <br>Where `n` is the number of restaurants in the store
 
 ### Time Complexity
-Method                                                                        | Average Case     | Description
+Method                                                                        | Worst Case       | Description
 ----------------------------------------------------------------------------- | ---------------- | -----------
 addRestaurant(Restaurant r)                                                   | O(1)             | Adding elements to a hashmap is constant time
 addRestaurant(Restaurant[] r)                                                 | O(n)             | Feeds all elements from array into the first `addRestaurant` method <br>Length of array is `n`
@@ -101,7 +101,7 @@ Store           | Worst Case | Description
 ReviewStore     | O(n)       | I have used a `hash map` to store reviews <br>Where `n` is the number of reviews in the store
 
 ### Time Complexity
-Method                                     | Average Case     | Description
+Method                                     | Worst Case       | Description
 ------------------------------------------ | ---------------- | -----------
 addReview(Review r)                        | O(n+o)           | For loops, adding to hashmap is constant time <br>`n` is the number of reviews in the store and `o` is the number of elements in 'olderReviews'
 addReview(Review[] r)                      | O(a*n + a*o)     | Feeds all elements from array into the first `addReview` method <br>Length of array is `a`, number of reviews in store is `n` and length of 'olderReviews' is `o`
@@ -150,7 +150,7 @@ KeywordChecker     | O(1)       | Length of array used to store the keywords is 
 StringFormatter    | O(n)       | Binary Search is performed `n` times. <br>`n` is the number of accents in the word
 
 ### Time Complexity
-Util              | Method                                                                             | Average Case     | Description
+Util              | Method                                                                             | Worst Case       | Description
 ----------------- | ---------------------------------------------------------------------------------- | ---------------- | -----------
 ConvertToPlace    | convert(float lat, float lon)                                                      | O(1)             | BinarySearch through an array of constant length
 DataChecker       | extractTrueID(String[] repeatedID)                                                 | O(1)             | Nested for loop <br>Loops a constant number of times
